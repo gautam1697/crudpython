@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read</title>
+</head>
+
+<body>
+<h1>This is read</h1>
+<table>
+
+
+{% for Employee in employees %}
+    <tr border="3">
+        <td>{{ Employee.emp_id }}</td>
+        <td>{{ Employee.emp_contact }}</td><br>
+         <td><a href='delete-record'{{ Employee.id }}>delete</a></td>
+    <td><a href="update">update</a></td>
+
+
+{% endfor %}
+ </tr>
+</table>
+</body>
+</html>

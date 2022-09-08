@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Logout</title>
+</head>
+
+<body>
+<h1>This is logout page</h1>
+{% csrf_token %}
+  Welcome {username}!
+  <p class="text-center">Want to logout <a href={% url 'logged_in' %}>Logout</a>.</p>
+</body>
+</html>

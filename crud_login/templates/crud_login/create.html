@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Create,Update,Delete</title>
+</head>
+<body>
+<h1>Create data</h1>
+<form action="{% url 'create' %} " method="post">
+    {% csrf_token %}
+    <label>Enter ID</label>
+    <label>
+        <input type="text" name="a" required >
+    </label>
+      <br>
+    <label> Enter Contact Info<input type="text" name="b" required >
+    <input type="submit" value="Submit">
+    </label>
+</form>
+<hr>
+</body>
+</html>
